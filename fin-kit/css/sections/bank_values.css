@@ -1,0 +1,116 @@
+.bank_values_section {
+    margin-top: 115px;
+    margin-bottom: 1000px;
+}
+
+.bank_values_main_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bank_values_main_content_left h2 {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 130%;
+    margin: 0;
+}
+
+.bank_values_main_content_left h2 span {
+    font-size: 38px;
+    color: var(--primary-color);
+}
+
+.bank_values_main_content_left p {
+    margin-top: 15px;
+    max-width: 405px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.bank_values_main_content_right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 502px;
+}
+
+.bank_values_main_content_right div {
+    width: 231px;
+    height: 140px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.bank_values_main_content_right div p {
+    font-size: 14px;
+    line-height: 140%;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.bank_values_main_content_right div:nth-child(even) {
+    width: 251px;
+}
+
+.bank_values_main_content_right div:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.bank_values_content_left_button {
+    width: 200px;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 38px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    color: white;
+    transition: background-color var(--hover-transition);
+}
+
+.bank_values_content_left_button:hover {
+    background-color: var(--primary-color-darker);
+}
+
+@media screen and (max-width: 1100px) {
+    .bank_values_main_content {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .bank_values_main_content_left h2 {
+        font-size: 24px;
+    }
+    .bank_values_main_content_left h2 span {
+        font-size: 24px;
+    }
+    .bank_values_main_content_left p {
+        margin-top: 5px;
+    }
+    .bank_values_content_left_button {
+        margin-top: 13px;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+    .bank_values_main_content_right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bank_values_main_content_right div {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 40vw;
+        margin-right: 0 !important;
+        padding: 10px;
+    }
+    .bank_values_main_content_right p {
+        text-align: left;
+    }
+    .bank_values_main_content_right div img {
+        margin-bottom: 15px;
+    }
+}
