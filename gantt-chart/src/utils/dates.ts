@@ -16,8 +16,6 @@ export function getDatesFromChartPeriod(periodStart: string, periodEnd: string):
     if(dateParts.length < 3) throw new Error("Invalid period format")
     return new Date(dateParts.at(0)!, dateParts.at(1)! - 1, dateParts.at(2))
   })
-  console.log(periodStart)
-  console.log(periodEnd)
   const differenceBetweenDates = +periodEndDate - +periodStartDate
   const daysAmount = differenceBetweenDates / oneDayInMilliseconds
   let lastDay = periodStartDate
@@ -25,6 +23,5 @@ export function getDatesFromChartPeriod(periodStart: string, periodEnd: string):
     dates.push(formatDateToCommonStringFormat(lastDay))
     lastDay = new Date(+lastDay + oneDayInMilliseconds)
   }
-  console.log(dates)
   return dates
 }
