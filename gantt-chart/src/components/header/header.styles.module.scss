@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+
+  h2 {
+    margin: 0;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 16px;
+    height: 40px;
+    border: var(--border-size) solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
